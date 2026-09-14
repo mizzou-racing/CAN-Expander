@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

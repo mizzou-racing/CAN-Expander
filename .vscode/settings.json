@@ -1,5 +1,5 @@
 {
-    "files.associations": {
-        "format": "c"
-    }
+    "idf.currentSetup": "C:\\esp\\v6.1\\esp-idf",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM5"
 }

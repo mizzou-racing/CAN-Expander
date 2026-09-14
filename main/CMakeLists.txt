@@ -1,3 +1,16 @@
-idf_component_register(SRCS "CEM_EGT.c" "CEM_CAN.c" "Spi.c" "main.c" "LEDs.c" "CEM_ADC.c" "CEM.c"
-                    PRIV_REQUIRES spi_flash esp_driver_gpio esp_driver_spi driver esp_adc
-                    INCLUDE_DIRS "")
+idf_component_register(
+        SRCS 
+            "main.c"
+            "drivers/cem_adc.c"
+            "drivers/cem_can.c"
+
+        INCLUDE_DIRS 
+            "." 
+            "config"
+            "drivers"
+
+        PRIV_REQUIRES
+            esp_adc
+            esp_driver_gpio
+            esp_driver_twai
+) 
