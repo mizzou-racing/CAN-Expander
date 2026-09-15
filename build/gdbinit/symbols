@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file C:/RND Test Enviorment/CEM_EV/CEM_EV/build/bootloader/bootloader.elf
+    add-symbol-file C:/Users/cengr-lab/Documents/CEM/CAN-Expander/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file C:/RND Test Enviorment/CEM_EV/CEM_EV/build/CEM_EV.elf
+file C:/Users/cengr-lab/Documents/CEM/CAN-Expander/build/CEM_EV.elf

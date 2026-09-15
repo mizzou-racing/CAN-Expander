@@ -18,6 +18,7 @@
        
 /* List of deprecated options */
 /* CPU instruction prefetch padding size for flash mmap scenario */
+/* Copy from esp_secure_boot.h */
 /*
  * PMP region granularity size
  * Software may determine the PMP granularity by writing zero to pmp0cfg, then writing all ones
@@ -532,6 +533,7 @@ SECTIONS
  * SPDX-License-Identifier: Apache-2.0
  */
 /* CPU instruction prefetch padding size for flash mmap scenario */
+/* Copy from esp_secure_boot.h */
 /*
  * PMP region granularity size
  * Software may determine the PMP granularity by writing zero to pmp0cfg, then writing all ones
@@ -631,6 +633,7 @@ SECTIONS
  * SPDX-License-Identifier: Apache-2.0
  */
 /* CPU instruction prefetch padding size for flash mmap scenario */
+/* Copy from esp_secure_boot.h */
 /*
  * PMP region granularity size
  * Software may determine the PMP granularity by writing zero to pmp0cfg, then writing all ones

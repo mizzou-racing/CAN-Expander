@@ -25,6 +25,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 /* CPU instruction prefetch padding size for flash mmap scenario */
+/* Copy from esp_secure_boot.h */
 /*
  * PMP region granularity size
  * Software may determine the PMP granularity by writing zero to pmp0cfg, then writing all ones
@@ -138,7 +139,7 @@ MEMORY
   /**
    * RTC fast memory (executable). Persists over deep sleep.
    */
-  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - (0 + (24) + 0)
+  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - (0 + (24))
   /* We reduced the size of rtc_iram_seg by RESERVE_RTC_MEM value.
      It reserves the amount of RTC fast memory that we use for this memory segment.
      This segment is intended for keeping:
@@ -146,7 +147,7 @@ MEMORY
        - (higher addr) bootloader rtc data (s_bootloader_retain_mem, when a Kconfig option is on).
      The aim of this is to keep data that will not be moved around and have a fixed address.
   */
-  rtc_reserved_seg(RW) : org = 0x600fe000 + 0x2000 - (0 + (24) + 0), len = (0 + (24) + 0)
+  rtc_reserved_seg(RW) : org = 0x600fe000 + 0x2000 - (0 + (24)), len = (0 + (24))
   /**
    * RTC slow memory (data accessible). Persists over deep sleep.
    * Start of RTC slow memory is reserved for ULP co-processor code + data, if enabled.
