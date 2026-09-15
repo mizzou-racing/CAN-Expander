@@ -55,3 +55,27 @@ esp_err_t cem_can_init(void)
 
     return ESP_OK;
 }
+
+esp_err_t cem_can_transmit(
+    uint32_t id,
+    const uint8_t *data,
+    uint8_t length
+)
+{
+    if (data == NULL || length > 8)
+    {
+        return ESP_ERR_INVALID_ARG;
+    }
+
+    twai_frame_t frame = {
+        .header.id = id,
+        .buffer = (uint8_t *)data,
+        .buffer_len = length,
+    };
+
+    return twai_node_transmit(
+        can_node,
+        &frame,
+        100
+    );
+}
